@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Yoga & Wellness Inspired Design System */
+    --background: 180 20% 99%;
+    --foreground: 200 15% 8%;
+
+    --card: 180 20% 99%;
+    --card-foreground: 200 15% 8%;
+
+    --popover: 180 20% 99%;
+    --popover-foreground: 200 15% 8%;
+
+    /* Calming sage green primary */
+    --primary: 150 25% 35%;
+    --primary-foreground: 150 15% 95%;
+    --primary-glow: 150 35% 65%;
+    
+    /* Soft lavender secondary */
+    --secondary: 270 15% 94%;
+    --secondary-foreground: 270 8% 25%;
+
+    /* Warm earth muted tones */
+    --muted: 30 15% 95%;
+    --muted-foreground: 30 8% 45%;
+
+    /* Gentle blue accent */
+    --accent: 200 25% 88%;
+    --accent-foreground: 200 15% 25%;
+
+    /* Mindful coral for warnings */
+    --destructive: 15 75% 55%;
+    --destructive-foreground: 15 15% 95%;
+
+    --border: 150 15% 88%;
+    --input: 150 15% 88%;
+    --ring: 150 25% 35%;
+
+    /* Success & status colors */
+    --success: 120 40% 45%;
+    --success-foreground: 120 15% 95%;
+    --warning: 45 85% 55%;
+    --warning-foreground: 45 15% 15%;
+
+    /* Gradients for wellness aesthetics */
+    --gradient-wellness: linear-gradient(135deg, hsl(150 35% 65%) 0%, hsl(200 35% 75%) 100%);
+    --gradient-calm: linear-gradient(180deg, hsl(180 20% 99%) 0%, hsl(150 25% 96%) 100%);
+    --gradient-zen: linear-gradient(45deg, hsl(270 15% 94%) 0%, hsl(200 25% 88%) 100%);
+
+    /* Shadows for depth */
+    --shadow-wellness: 0 10px 30px -10px hsl(150 25% 35% / 0.15);
+    --shadow-card: 0 4px 20px -4px hsl(150 15% 50% / 0.1);
+    --shadow-elegant: 0 20px 40px -12px hsl(150 25% 35% / 0.25);
+
+    /* Animation curves */
+    --transition-zen: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    --transition-calm: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.75rem;
+
+    /* Sidebar with wellness theme */
+    --sidebar-background: 150 25% 96%;
+    --sidebar-foreground: 150 15% 25%;
+    --sidebar-primary: 150 25% 35%;
+    --sidebar-primary-foreground: 150 15% 95%;
+    --sidebar-accent: 150 20% 90%;
+    --sidebar-accent-foreground: 150 15% 25%;
+    --sidebar-border: 150 15% 85%;
+    --sidebar-ring: 150 25% 35%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
