@@ -199,7 +199,6 @@ const Products = () => {
 
   return (
     <div className="space-y-10">
-      {/* 🔹 Header + Add Button */}
       <div className="flex justify-between items-center">
         <div>
           <h1 className="text-3xl font-bold">Admin Dashboard</h1>
@@ -300,6 +299,11 @@ const Products = () => {
                 <CardContent className="space-y-2">
                   <p><strong>User:</strong> {order.userId?.name} ({order.userId?.email})</p>
                   <p><strong>Status:</strong> {order.status}</p>
+                  <p><strong>Address:</strong> {order.address?.[0]
+                    ? `${order.address[0].street}, ${order.address[0].city}, ${order.address[0].state} - ${order.address[0].pincode}`
+                    : 'N/A'}
+                  </p>
+                  <p><strong>Phone:</strong> {order.address?.[0]?.phone || 'N/A'}</p>
                   <ul className="text-sm text-muted-foreground list-disc ml-6">
                     {order.products.map((item: any, i: number) => (
                       <li key={i}>
