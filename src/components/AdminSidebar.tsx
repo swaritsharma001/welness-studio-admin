@@ -28,8 +28,8 @@ import {
 const mainItems = [
   { title: "Dashboard", url: "/", icon: LayoutDashboard },
   { title: "Users", url: "/users", icon: Users },
-  { title: "Classes & Bookings", url: "/classes", icon: Calendar },
-  { title: "Instructors", url: "/instructors", icon: UserCheck },
+ // { title: "Classes & Bookings", url: "/classes", icon: Calendar },
+  { title: "Instructors", url: "/admin/instructors", icon: UserCheck },
   { title: "Shop & Products", url: "/products", icon: ShoppingBag },
   { title: "Content", url: "/content", icon: FileText },
 ];
